@@ -5,9 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -17,13 +16,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Role extends BaseEntity {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
 //    private String name;
-    
+
     @ManyToMany(mappedBy = "roles")
     private List<User> users;
-    
+
     @Enumerated(EnumType.STRING)
     @Column(length = 20)
     private ERole name;

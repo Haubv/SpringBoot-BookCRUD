@@ -1,11 +1,10 @@
 package demo_springjwt.demo.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import demo_springjwt.demo.entity.Token;
 import demo_springjwt.demo.repository.TokenRepository;
 import demo_springjwt.demo.service.TokenService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class TokenServiceImpl implements TokenService {

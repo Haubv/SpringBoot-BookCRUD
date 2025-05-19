@@ -1,7 +1,6 @@
 package demo_springjwt.demo.entity;
 
 import lombok.AllArgsConstructor;
-
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,9 +17,9 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Token extends BaseEntity {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	@Column(length = 1000)
+    @Column(length = 1000)
     private String token;
 
     private Date tokenExpDate;
